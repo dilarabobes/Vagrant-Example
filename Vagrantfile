@@ -74,5 +74,7 @@ Vagrant.configure("2") do |config|
   sudo apt-get update
   sudo apt-get install -y python3 python3-pip
   pip3 install flask
+  cd /vagrant/
+  flask --app hello run --host=0.0.0.0
   SHELL
 end
